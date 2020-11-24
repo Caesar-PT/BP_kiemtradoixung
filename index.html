@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        let myArr = s.split('')
+        let i = 0;
+        while (i < (myArr.length/2)) {
+            let kq = true;
+            if (myArr[i] !== myArr[myArr.length - 1 - i]){
+                kq = false;
+                console.log(kq);
+                break;
+            }
+            i++;
+            console.log(kq);
+        }
+    }
+    isPalindrome(prompt('Nhập từ'));
+</script>
+
+</body>
+</html>
